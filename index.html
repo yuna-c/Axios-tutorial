@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>axios</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
     <div class="wrap">
@@ -15,10 +15,18 @@
         <div class="code-info">
             <h2><strong>axios</strong></h2>
             <ul class="code-list">
-                <li><a href="./axios/example1.js" target="_blank">axios</a></li>
                 <li><a href="https://github.com/axios/axios" target="_blank">axios github</a></li>
                 <li>browser(크롬)환경과 node.js(서버) 환경의 양쪽에서 똑같은 api로 http클라이언트 역할을 할 수 있게 도와주는 라이브러리</li>
                 <li>Promise를 베이스로 하고있음</li>
+                
+            </ul>
+        </div>
+
+        <div class="code-info">
+            <h2><strong>example</strong></h2>
+            <ul class="code-list">
+                <li><a href="./js/example1.js" target="_blank">axios</a></li>
+                <li></li>
             </ul>
         </div>
         <pre>
@@ -40,6 +48,35 @@ const res = await axios.post('https://api.marktube.tv/v1/me',{
 });
             </code>
         </pre>
+
+        <div class="code-info">
+            <h2><strong>bootstrap</strong></h2>
+            <ul class="code-list">
+                <li><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a></li>
+                <li><a href="https://getbootstrap.com/docs/5.1/examples/">Bootstrap example</a></li>
+                <li><a href="start.html">시작예제</a></li>
+            </ul>
+        </div>
+
+        <pre>
+            <code>
+/* 1 */
+async function main(){  
+    // 버튼에 이벤트 연결
+
+    // 토큰 체크
+
+    // 토큰으로 서버에서 나의 정보 받아오기(문제 있으면 로그아웃 시키겠져)
+
+    // 나의 책을 서버에서 받아오기
+    
+    // 받아온 책을 그리기
+}
+
+document.addEventListner('DOMContentLoaded', main);  //돔컨텐트가 로디드 된 후에 메인함수(async) 실행
+            </code>
+        </pre>
+    
 <!-- 
     <div class="code-info">
         <h2><strong></strong></h2>
