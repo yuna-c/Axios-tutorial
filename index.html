@@ -18,7 +18,7 @@
                 <li><a href="https://github.com/axios/axios" target="_blank">axios github</a></li>
                 <li>browser(크롬)환경과 node.js(서버) 환경의 양쪽에서 똑같은 api로 http클라이언트 역할을 할 수 있게 도와주는 라이브러리</li>
                 <li>Promise를 베이스로 하고있음</li>
-                
+                <li>test@marktube.tv / 1234</li>
             </ul>
         </div>
 
@@ -31,6 +31,46 @@
         </div>
         <pre>
             <code>
+#Login 
+POST https://api.markube.tv/v1/me
+Body
+- {email, password}
+
+#내 정보 가져오기
+GET https://api.markube.tv/v1/me
+Request Headers
+- Authorization: Bearer 3acc8490-1d5c-4148-a307-e5ded8c6de0
+
+#책 목록 가져오기
+GET https://api.markube.tv/v1/book
+Request Headers
+- Authorization: Bearer 3acc8490-1d5c-4148-a307-e5ded8c6de0
+
+#책 정보 가져오기
+POST https://api.markube.tv/v1/book/1
+Request Headers
+- Authorization: Bearer 3acc8490-1d5c-4148-a307-e5ded8c6de0
+
+#책 추가하기 
+POST https://api.markube.tv/v1/book
+Request Headers
+- Authorization: Bearer 3acc8490-1d5c-4148-a307-e5ded8c6de0
+Body
+- {title, message, author, url}
+
+#책 수정하기
+PATCH https://api.markube.tv/v1/book/1
+Request Headers
+- Authorization: Bearer 3acc8490-1d5c-4148-a307-e5ded8c6de0
+Body
+- {title, message, author, url}
+
+#책 삭제하기
+DELETE https://api.markube.tv/v1/book/1
+Request Headers
+- Authorization: Bearer 3acc8490-1d5c-4148-a307-e5ded8c6de0
+
+
 // Login Promise
 // axios library 특징 => 모든 메서드들이 프로미스 형태로 지원됨
 axios.post('https://api.marktube.tv/v1/me'/* 주소 */,{
