@@ -1,2 +1,2 @@
 # axios
-https://yuna-c.github.io/axios/
+https://yuna-c.github.io/Axios-tutorial/
